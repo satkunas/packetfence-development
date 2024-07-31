@@ -1,0 +1,11 @@
+# rename this file to `defaults`
+GIT_EMAIL=john@doe.com
+
+# No spaces
+GIT_NAME=John+Doe
+
+# Generate a fine-grained PAT at https://github.com/settings/tokens
+# with account permissions for:
+#  GPG keys: Read and write
+#  Git SSH keys: Read and write
+GIT_TOKEN=github_pat_
