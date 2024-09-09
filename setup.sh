@@ -116,8 +116,8 @@ cat << EOF > ~/.gitconfig
 EOF
 
 touch ~/.bashrc
-if [[ -z $(grep "export GPG_TTY=$(tty)" ~/.bashrc) ]]; then
-  echo "export GPG_TTY=$(tty)" >> ~/.bashrc
+if [[ -z $(grep "export GPG_TTY=\$(tty)" ~/.bashrc) ]]; then
+  echo "export GPG_TTY=\$(tty)" >> ~/.bashrc
 fi
 source ~/.bashrc
 
