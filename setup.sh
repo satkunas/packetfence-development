@@ -110,9 +110,6 @@ cat << EOF > ~/.gitconfig
 
 [format]
   signoff = true
-
-[safe]
-  directory = /usr/local/pf
 EOF
 
 touch ~/.bashrc
