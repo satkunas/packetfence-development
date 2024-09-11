@@ -114,7 +114,13 @@ EOF
 
 touch ~/.bashrc
 if [[ -z $(grep "export GPG_TTY=\$(tty)" ~/.bashrc) ]]; then
-  echo "export GPG_TTY=\$(tty)" >> ~/.bashrc
+  echo -n "export GPG_TTY=\$(tty)" >> ~/.bashrc
+fi
+if [[ -z $(grep "export HISTFILESIZE=" ~/.bashrc) ]]; then
+  echo -n "export HISTFILESIZE=65536" >> ~/.bashrc
+fi
+if [[ -z $(grep "export HISTSIZE=" ~/.bashrc) ]]; then
+  echo -n "export HISTSIZE=65536" >> ~/.bashrc
 fi
 source ~/.bashrc
 
