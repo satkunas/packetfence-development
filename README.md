@@ -2,6 +2,18 @@
 
 This script configures GPG and SSH for GIT for the current user on the local host.
 
+## Create GIT_TOKEN
+
+ * Visit https://github.com/settings/personal-access-tokens/new
+ * Expiration: Any - this token will only be used once and can be removed after setup.
+ * Account Permissions:
+   * GPG Keys: Read & Write
+   * SSH Signing Keys: Read & Write
+
+![Screenshot 2025-03-07 at 2 16 55 PM](https://github.com/user-attachments/assets/fca8efbb-c3e1-40de-8e5b-b80aa7b5ef65)
+![Screenshot 2025-03-07 at 2 17 06 PM](https://github.com/user-attachments/assets/ee904ac8-e4b0-43d1-8c32-03686fb38952)
+
+
 ## Configure
 
 Copy the example defaults, and enter your `GIT_EMAIL`, `GIT_NAME` and `GIT_TOKEN`.
